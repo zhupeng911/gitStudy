@@ -56,18 +56,3 @@ git remote show [remote rep1]	列出所有远程仓库
 git rebase -i head ~ ~
 git rebase -i hash值	合并前两次的commit
 合并前i次commit在最新commit的提交
-
-
-
-mvn clean	清理项目生产的临时文件，一般是target目录
-mvn compile	编译源代码，在target目录下生成 项目名.class文件
-mvn test-compile	编译测试代码，一般是src/test目录
-mvn package	将项目打包jar，在target目录下生成jar文件（项目名-版本号）
-mvn test	运行测试，或执行src/test/java下junit的测试用例
-mvn -v	显示maven版本信息
-mvn install	将打包的jar文件复制到本地仓库
-mvn deploy	将打包的jar文件发布到远程
-mvn site	生成项目相关信息的网站
-mvn idea:idea	生成IDEA项目
-mvn dependency:tree	打印项目的依赖树
-mvn archrtype:create	创建maven的普通java项目
